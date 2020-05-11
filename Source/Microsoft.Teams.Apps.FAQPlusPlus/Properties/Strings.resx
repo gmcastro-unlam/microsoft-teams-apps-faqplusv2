@@ -169,7 +169,7 @@
     <comment>Ability to chat directly with end user from SME channel.</comment>
   </data>
   <data name="NotificationCardContent" xml:space="preserve">
-    <value>He compartido su pregunta con los expertos relacionados. Te responderán directamente con un mensaje de chat.</value>
+    <value>He compartido su pregunta con los expertos relacionados. Te responderán directamente con un email.</value>
     <comment>Confirmation message to the user upon asking question to the expert.</comment>
   </data>
   <data name="TeamChatHeaderText" xml:space="preserve">
@@ -279,7 +279,7 @@ Soy tu bot amigable que le ayuda a proporcionar apoyo a las personas que interac
     <comment>Message posted to the thread when the ticket is reopened. {0} = name of SME who reopened the request.</comment>
   </data>
   <data name="AssignedTicketUserNotification" xml:space="preserve">
-    <value>Su pregunta ha sido asignada a un experto. Te responderán directamente con un mensaje de chat.</value>
+    <value>Su pregunta ha sido asignada a un experto. Te responderán directamente con un email.</value>
     <comment>Notification text sent to the user who opened a ticket, when the ticket is assigned to an expert.</comment>
   </data>
   <data name="ClosedTicketUserNotification" xml:space="preserve">
@@ -287,7 +287,7 @@ Soy tu bot amigable que le ayuda a proporcionar apoyo a las personas que interac
     <comment>Notification text sent to the user who opened a ticket, when the ticket is closed.</comment>
   </data>
   <data name="ReopenedTicketUserNotification" xml:space="preserve">
-    <value>Su solicitud está abierta de nuevo. Un experto le enviará directamente un mensaje de chat.</value>
+    <value>Su solicitud está abierta de nuevo. Un experto le enviará directamente un email.</value>
     <comment>Notification text sent to the user who opened a ticket, when the ticket is reopened.</comment>
   </data>
   <data name="GoToOriginalThreadButtonText" xml:space="preserve">
@@ -347,7 +347,7 @@ Soy tu bot amigable que le ayuda a proporcionar apoyo a las personas que interac
     <comment>This value represents the SME Ticket in the Unassigned status</comment>
   </data>
   <data name="AskAnExpertSubheaderText" xml:space="preserve">
-    <value>El experto le responderá directamente con un mensaje de chat.</value>
+    <value>El experto le responderá directamente con un email.</value>
     <comment>Ask en expert card subtitle text:lets the user know that SME team member can directly chat with the requester.</comment>
   </data>
   <data name="DescriptionFact" xml:space="preserve">
