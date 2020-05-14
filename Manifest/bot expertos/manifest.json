@@ -1,0 +1,169 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.1.1",
+  "id": "165dc594-e36a-488f-a8ba-20fcebacad86",
+  "packageName": "com.microsoft.teams.faqplus.experts",
+  "developer": {
+    "name": "Unlam",
+    "websiteUrl": "https://www.unlam.edu.ar/",
+    "privacyUrl": "https://www.unlam.edu.ar/",
+    "termsOfUseUrl": "https://www.unlam.edu.ar/"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "UNLaM Bot Expertos"
+  },
+  "description": {
+    "short": "Preguntas y respuestas frecuentes",
+    "full": "Preguntas y respuestas frecuentes"
+  },
+  "accentColor": "#64A2CC",
+  "bots": [
+    {
+      "botId": "f27c0bfd-c39a-43cc-80c0-865236fe7491",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Hazme un tour",
+              "description": "Tour of key features"
+            },
+            {
+              "title": "Pregunta a un experto",
+              "description": "Connect with an expert"
+            },
+            {
+              "title": "Comparte feedback",
+              "description": "Send feedback"
+            }
+          ]
+        }
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "help",
+      "name": "Help",
+      "contentUrl": "https://unlamfaq.azurewebsites.net/help?theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "composeExtensions": [
+    {
+      "botId": "f27c0bfd-c39a-43cc-80c0-865236fe7491",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "recents",
+          "type": "query",
+          "title": "Reciente",
+          "description": "Search recent requests",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "Buscar",
+              "description": "Search tickets"
+            }
+          ],
+          "context": [
+            "compose"
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "openrequests",
+          "type": "query",
+          "title": "Sin Asignar",
+          "description": "Search unassigned requests not yet assigned to an expert",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "Buscar",
+              "description": "Search tickets"
+            }
+          ],
+          "context": [
+            "compose"
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "assignedrequests",
+          "type": "query",
+          "title": "Asignado",
+          "description": "Search requests assigned to an expert",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "Buscar",
+              "description": "Search tickets"
+            }
+          ],
+          "context": [
+            "compose"
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "kbquestions",
+          "type": "query",
+          "title": "Base de conocimiento",
+          "description": "Search recent requests",
+          "parameters": [
+            {
+              "name": "searchText",
+              "title": "Buscar",
+              "description": "Search KB QnA pairs"
+            }
+          ],
+          "context": [
+            "compose"
+          ],
+          "initialRun": true
+        },
+        {
+          "id": "addquestion",
+          "type": "action",
+          "title": "Agregar nueva pregunta",
+          "description": "Add a new qna pair",
+          "initialRun": true,
+          "fetchTask": true,
+          "context": [
+            "compose",
+            "message"
+          ],
+          "parameters": [
+            {
+              "name": "addquestion",
+              "title": "Agregar una pregunta",
+              "description": "Add a new qna pair"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "unlamfaq.azurewebsites.net"
+  ]
+}
