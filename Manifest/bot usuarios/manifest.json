@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
   "manifestVersion": "1.5",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "id": "aba30cfc-05df-4002-b956-a70996b12a54",
   "packageName": "com.microsoft.teams.faqplus",
   "developer": {
@@ -37,15 +37,15 @@
           "commands": [
             {
               "title": "Hazme un tour",
-              "description": "Tour of key features"
+              "description": "Muestra de las funciones principales"
             },
             {
               "title": "Pregunta a un experto",
-              "description": "Connect with an expert"
+              "description": "Conectar con un experto"
             },
             {
               "title": "Comparte feedback",
-              "description": "Send feedback"
+              "description": "Envia feedback"
             }
           ]
         }
